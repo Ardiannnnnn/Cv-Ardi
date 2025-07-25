@@ -1,0 +1,98 @@
+{
+  "personalInfo": {
+    "name": "Ardian",
+    "age": 22,
+    "degree": "Fresh Graduate S.Kom",
+    "title": "Software Engineer",
+    "email": "ardian@email.com",
+    "phone": "+62 812-3456-7890",
+    "location": "Jakarta, Indonesia",
+    "website": "https://ardian.dev",
+    "linkedin": "https://linkedin.com/in/ardian",
+    "github": "https://github.com/ardian"
+  },
+  "summary": "Fresh graduate with a Bachelor's degree in Computer Science (S.Kom) passionate about software development and technology. Eager to apply theoretical knowledge and practical skills in a professional environment while continuously learning and growing in the tech industry.",
+  "skills": {
+    "programming": ["JavaScript", "TypeScript", "Python", "Java", "C++"],
+    "web": ["React", "Next.js", "Node.js", "HTML", "CSS", "Tailwind CSS"],
+    "database": ["MySQL", "PostgreSQL", "MongoDB"],
+    "tools": ["Git", "Docker", "VS Code", "Figma"],
+    "soft": ["Problem Solving", "Team Collaboration", "Communication", "Time Management"]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Computer Science (S.Kom)",
+      "institution": "Universitas Indonesia",
+      "year": "2020 - 2024",
+      "gpa": "3.75/4.00",
+      "relevant_courses": ["Data Structures & Algorithms", "Database Systems", "Web Development", "Software Engineering"]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Frontend Developer Intern",
+      "company": "Tech Startup Indonesia",
+      "period": "Jun 2023 - Aug 2023",
+      "description": [
+        "Developed responsive web applications using React and TypeScript",
+        "Collaborated with design team to implement user-friendly interfaces",
+        "Optimized application performance resulting in 25% faster load times"
+      ]
+    },
+    {
+      "position": "Freelance Web Developer",
+      "company": "Self-employed",
+      "period": "Jan 2023 - Present",
+      "description": [
+        "Built 5+ websites for local businesses using Next.js and Tailwind CSS",
+        "Managed client relationships and project timelines",
+        "Implemented SEO best practices to improve search rankings"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "E-Commerce Platform",
+      "tech": ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+      "description": "Full-stack e-commerce platform with user authentication, payment integration, and admin dashboard",
+      "github": "https://github.com/ardian/ecommerce-platform",
+      "demo": "https://ecommerce-demo.vercel.app"
+    },
+    {
+      "name": "Task Management App",
+      "tech": ["React", "Node.js", "MongoDB", "Socket.io"],
+      "description": "Real-time collaborative task management application with team features",
+      "github": "https://github.com/ardian/task-manager",
+      "demo": "https://task-manager-demo.vercel.app"
+    },
+    {
+      "name": "Weather Dashboard",
+      "tech": ["JavaScript", "CSS", "Weather API"],
+      "description": "Interactive weather dashboard with location-based forecasts and data visualization",
+      "github": "https://github.com/ardian/weather-dashboard",
+      "demo": "https://weather-dashboard-demo.vercel.app"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2024"
+    },
+    {
+      "name": "React Developer Certification",
+      "issuer": "Meta",
+      "year": "2023"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Indonesian",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Professional"
+    }
+  ]
+}

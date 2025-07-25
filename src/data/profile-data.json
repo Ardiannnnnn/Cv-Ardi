@@ -1,0 +1,191 @@
+{
+  "personalInfo": {
+    "name": "Ardian",
+    "title": "Software Engineer & Creative Developer",
+    "tagline": "Crafting digital experiences with passion and precision",
+    "bio": "I'm a passionate software engineer with a love for creating beautiful and functional digital experiences. With expertise in modern web technologies and a keen eye for design, I help businesses and individuals bring their digital visions to life.",
+    "location": "Jakarta, Indonesia",
+    "email": "hello@ardian.dev",
+    "phone": "+62 812-3456-7890",
+    "website": "https://ardian.dev",
+    "social": {
+      "github": "https://github.com/ardian",
+      "linkedin": "https://linkedin.com/in/ardian",
+      "twitter": "https://twitter.com/ardian_dev",
+      "instagram": "https://instagram.com/ardian.dev",
+      "dribbble": "https://dribbble.com/ardian"
+    }
+  },
+  "stats": [
+    {
+      "number": "50+",
+      "label": "Projects Completed"
+    },
+    {
+      "number": "25+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "3+",
+      "label": "Years Experience"
+    },
+    {
+      "number": "100%",
+      "label": "Satisfaction Rate"
+    }
+  ],
+  "services": [
+    {
+      "icon": "Code",
+      "title": "Web Development",
+      "description": "Custom web applications built with modern technologies like React, Next.js, and Node.js.",
+      "features": ["Responsive Design", "Performance Optimization", "SEO Friendly", "Modern UI/UX"]
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications using React Native and Flutter.",
+      "features": ["iOS & Android", "Native Performance", "User-Friendly", "App Store Ready"]
+    },
+    {
+      "icon": "Palette",
+      "title": "UI/UX Design",
+      "description": "Beautiful and intuitive user interfaces that provide exceptional user experiences.",
+      "features": ["User Research", "Wireframing", "Prototyping", "Design Systems"]
+    },
+    {
+      "icon": "Globe",
+      "title": "Digital Strategy",
+      "description": "Complete digital solutions from concept to deployment and maintenance.",
+      "features": ["Consulting", "Architecture", "DevOps", "Maintenance"]
+    }
+  ],
+  "skills": [
+    { "name": "JavaScript", "level": 95 },
+    { "name": "TypeScript", "level": 90 },
+    { "name": "React", "level": 95 },
+    { "name": "Next.js", "level": 90 },
+    { "name": "Node.js", "level": 85 },
+    { "name": "Python", "level": 80 },
+    { "name": "UI/UX Design", "level": 85 },
+    { "name": "Database Design", "level": 80 }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "category": "Web Development",
+      "image": "/api/placeholder/600/400",
+      "description": "A full-stack e-commerce platform with payment integration, admin dashboard, and real-time inventory management.",
+      "tech": ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+      "links": {
+        "github": "https://github.com/ardian/ecommerce",
+        "demo": "https://ecommerce-demo.vercel.app"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "category": "Mobile Development",
+      "image": "/api/placeholder/600/400",
+      "description": "A collaborative task management mobile app with real-time synchronization and team features.",
+      "tech": ["React Native", "Firebase", "Redux"],
+      "links": {
+        "github": "https://github.com/ardian/taskapp",
+        "demo": "https://taskapp-demo.com"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Brand Identity System",
+      "category": "UI/UX Design",
+      "image": "/api/placeholder/600/400",
+      "description": "Complete brand identity and design system for a fintech startup including logo, guidelines, and web design.",
+      "tech": ["Figma", "Adobe Creative Suite", "Principle"],
+      "links": {
+        "demo": "https://dribbble.com/shots/brand-identity"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Analytics Dashboard",
+      "category": "Web Development",
+      "image": "/api/placeholder/600/400",
+      "description": "Real-time analytics dashboard with interactive charts and data visualization for business intelligence.",
+      "tech": ["React", "D3.js", "Node.js", "MongoDB"],
+      "links": {
+        "github": "https://github.com/ardian/analytics",
+        "demo": "https://analytics-demo.vercel.app"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "position": "CEO, TechStart",
+      "content": "Ardian delivered an exceptional website that exceeded our expectations. His attention to detail and technical expertise is outstanding.",
+      "rating": 5,
+      "avatar": "/api/placeholder/100/100"
+    },
+    {
+      "name": "Michael Chen",
+      "position": "Product Manager, InnovateCorp",
+      "content": "Working with Ardian was a pleasure. He understood our vision perfectly and brought it to life with clean, efficient code.",
+      "rating": 5,
+      "avatar": "/api/placeholder/100/100"
+    },
+    {
+      "name": "Lisa Rodriguez",
+      "position": "Founder, CreativeStudio",
+      "content": "The mobile app Ardian developed for us has been a game-changer. User engagement increased by 200% since launch.",
+      "rating": 5,
+      "avatar": "/api/placeholder/100/100"
+    }
+  ],
+  "experience": [
+    {
+      "year": "2024",
+      "title": "Senior Frontend Developer",
+      "company": "Tech Innovation Labs",
+      "description": "Leading frontend development for enterprise applications"
+    },
+    {
+      "year": "2023",
+      "title": "Full Stack Developer",
+      "company": "Digital Solutions Inc",
+      "description": "Developed and maintained multiple client projects"
+    },
+    {
+      "year": "2022",
+      "title": "Junior Developer",
+      "company": "StartUp Hub",
+      "description": "Built responsive web applications and learned best practices"
+    }
+  ],
+  "blog": [
+    {
+      "title": "The Future of Web Development",
+      "excerpt": "Exploring emerging trends and technologies that will shape the future of web development in 2024 and beyond.",
+      "date": "2024-01-15",
+      "readTime": "5 min read",
+      "category": "Technology",
+      "image": "/api/placeholder/400/250"
+    },
+    {
+      "title": "Building Scalable React Applications",
+      "excerpt": "Best practices and patterns for building large-scale React applications that can grow with your business needs.",
+      "date": "2024-01-10",
+      "readTime": "8 min read",
+      "category": "Development",
+      "image": "/api/placeholder/400/250"
+    },
+    {
+      "title": "Design Systems That Scale",
+      "excerpt": "How to create and maintain design systems that work across teams and products while ensuring consistency.",
+      "date": "2024-01-05",
+      "readTime": "6 min read",
+      "category": "Design",
+      "image": "/api/placeholder/400/250"
+    }
+  ]
+}
