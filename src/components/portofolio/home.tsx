@@ -45,6 +45,16 @@ function Typewriter({ text, speed = 150 }: { text: string; speed?: number }) {
 }
 
 export default function Home() {
+  const handleScrollTo = (sectionId: string) => {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <div
       id="home"
@@ -87,16 +97,22 @@ export default function Home() {
           <span className="text-Brown">
             <Typewriter text="Ardian" speed={150} />
           </span>
-          ,<br className="md:hidden" /> a frontend developer.
+          ,<br className="md:hidden" /> a software engineer.
         </h1>
         <p className="text-White/80 text-xl md:text-4xl mt-2">Welcome to my page.</p>
         
         {/* Social buttons atau CTA */}
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <button className="px-6 py-3 bg-Brown text-White rounded-lg hover:bg-DarkBrown transition-colors">
+          <button 
+            onClick={() => handleScrollTo('#projects')}
+            className="px-6 py-3 bg-Brown text-White rounded-lg hover:bg-DarkBrown transition-colors"
+          >
             View My Work
           </button>
-          <button className="px-6 py-3 border-2 border-Brown text-Brown rounded-lg hover:bg-Brown hover:text-White transition-colors">
+          <button 
+            onClick={() => handleScrollTo('#contact')}
+            className="px-6 py-3 border-2 border-Brown text-Brown rounded-lg hover:bg-Brown hover:text-White transition-colors"
+          >
             Contact Me
           </button>
         </div>

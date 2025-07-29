@@ -134,7 +134,7 @@ export default function Navbar() {
                   className={clsx(
                     "block py-2 px-3 rounded-sm md:p-0 transition-colors cursor-pointer",
                     activeSection === link.href
-                      ? "bg-Orange text-white md:bg-transparent md:text-Orange"
+                      ? "bg-Orange text-White md:bg-transparent md:text-Orange"
                       : "text-Brown hover:text-Orange hover:bg-Orange/20 md:hover:bg-transparent"
                   )}
                 >
