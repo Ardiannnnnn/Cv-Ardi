@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ardian - Frontend Developer",
-  description: "Portfolio website of Ardian, a passionate frontend developer specializing in React, TypeScript, and modern web technologies.",
+  title: "Ardian - Software Engineer",
+  description: "Portfolio website of Ardian, a passionate software engineer specializing in React, TypeScript, and modern web technologies.",
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
