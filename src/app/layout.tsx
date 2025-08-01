@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Ardian - Frontend Developer",
   description: "Portfolio website of Ardian, a passionate frontend developer specializing in React, TypeScript, and modern web technologies.",
   icons: {
-    icon: '/favico.svg',
-    shortcut: '/favico.svg',
-    apple: '/favico.svg',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 };
 
