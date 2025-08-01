@@ -85,16 +85,14 @@ export default function About() {
             {/* Text Content */}
             <div className="md:text-left text-center space-y-6">
               <p className="text-White/90 text-base md:text-lg leading-relaxed">
-                Halo! Saya{" "}
-                <span className="text-Brown font-semibold">Ardian</span>, seorang
-                fresh graduate berusia 22 tahun dari Program Studi Informatika,
-                Universitas Syiah Kuala.
+                Hello, my name is{" "}
+                <span className="text-Brown font-semibold">Ardian</span>, a
+                fresh graduate from the Computer Science program at
+                Syiah Kuala University.
               </p>
 
               <p className="text-White/80 text-base md:text-lg leading-relaxed">
-                Sejak masa kuliah, saya sangat tertarik dengan dunia teknologi dan
-                terus mengembangkan kemampuan saya di bidang IT, khususnya dalam
-                berbagai bahasa pemrograman dan sistem teknologi informasi.
+                Since my university years, I have had a strong passion for technology and have continuously developed my skills in IT, particularly in programming languages and information systems.
               </p>
 
               {/* Skills Tags */}

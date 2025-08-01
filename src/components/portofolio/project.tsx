@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import projectsData from "../../data/portofolio.json";
 
 interface Project {
-  nama: string;
-  deskripsi: string;
-  link_github: string;
+  title: string;
+  description: string;
+  github_link: string;
   technologies: string[];
 }
 
@@ -76,8 +76,7 @@ export default function Project() {
             </span>
           </h1>
           <p className="text-White/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-            Berikut adalah beberapa project yang telah saya kerjakan selama masa
-            kuliah dan pembelajaran mandiri
+            Here are some projects I have worked on during my time in university and through self-directed learning.
           </p>
         </div>
 
@@ -119,10 +118,10 @@ export default function Project() {
               {/* Project Content */}
               <div className="text-left">
                 <h3 className="text-White text-xl md:text-2xl font-bold mb-3 group-hover:text-Brown transition-colors duration-300">
-                  {project.nama}
+                  {project.title}
                 </h3>
                 <p className="text-White/70 text-sm md:text-base leading-relaxed mb-6">
-                  {project.deskripsi}
+                  {project.description}
                 </p>
 
                 {/* Technologies */}
@@ -140,7 +139,7 @@ export default function Project() {
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <a
-                    href={project.link_github}
+                    href={project.github_link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-Brown text-White rounded-lg hover:bg-DarkBrown transition-all duration-300 text-sm font-medium"

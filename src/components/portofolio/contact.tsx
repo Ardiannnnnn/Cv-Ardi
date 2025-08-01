@@ -95,8 +95,7 @@ export default function Contact() {
             </span>
           </h1>
           <p className="text-White/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-            Punya proyek menarik atau ingin berkolaborasi? Jangan ragu untuk
-            menghubungi saya!
+            If you have an exciting project or are interested in collaborating, don’t hesitate to contact me!
           </p>
         </div>
 
@@ -237,7 +236,7 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-White/90 text-sm font-medium mb-2 text-start">
-                    Nama Lengkap
+                    Name
                   </label>
                   <input
                     type="text"
@@ -246,7 +245,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-Brown/10 border border-Brown/30 rounded-lg text-White placeholder-White/50 focus:outline-none focus:ring-2 focus:ring-Brown/50 focus:border-Brown"
-                    placeholder="Masukkan nama lengkap"
+                    placeholder="Enter your full name"
                   />
                 </div>
                 <div>
@@ -260,7 +259,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 bg-Brown/10 border border-Brown/30 rounded-lg text-White placeholder-White/50 focus:outline-none focus:ring-2 focus:ring-Brown/50 focus:border-Brown"
-                    placeholder="contoh@email.com"
+                    placeholder="example@email.com"
                   />
                 </div>
               </div>
@@ -276,13 +275,13 @@ export default function Contact() {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-Brown/10 border border-Brown/30 rounded-lg text-White placeholder-White/50 focus:outline-none focus:ring-2 focus:ring-Brown/50 focus:border-Brown"
-                  placeholder="Topik pesan"
+                  placeholder="Topic"
                 />
               </div>
 
               <div>
                 <label className="block text-White/90 text-sm font-medium mb-2 text-start">
-                  Pesan
+                  Message
                 </label>
                 <textarea
                   name="message"
@@ -291,7 +290,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-Brown/10 border border-Brown/30 rounded-lg text-White placeholder-White/50 focus:outline-none focus:ring-2 focus:ring-Brown/50 focus:border-Brown resize-none"
-                  placeholder="Tulis pesan Anda di sini..."
+                  placeholder="Type your message here..."
                 />
               </div>
 
@@ -312,7 +311,7 @@ export default function Contact() {
                     d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                   />
                 </svg>
-                Kirim Pesan
+                Send
               </button>
             </form>
           </div>

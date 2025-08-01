@@ -1,26 +1,26 @@
 [
   {
-    "nama": "Tiket hebat",
-    "deskripsi": "Website Booking Kapal Fery online",
-    "link_github": "https://github.com/Ardiannnnnn/tiket-hebat",
+    "title": "Tiket Hebat",
+    "description": "An online ferry ticket booking website.",
+    "github_link": "https://github.com/Ardiannnnnn/tiket-hebat",
     "technologies": ["TypeScript", "React", "Node.js"]
   },
   {
-    "nama": "Deteksi typo",
-    "deskripsi": "Website Untuk Mendektesi Kata yang Typo",
-    "link_github": "https://github.com/Ardiannnnnn/DeteksiTypo",
+    "title": "Typo Detector",
+    "description": "A website to detect misspelled words in text.",
+    "github_link": "https://github.com/Ardiannnnnn/DeteksiTypo",
     "technologies": ["CSS", "Python", "JavaScript"]
   },
   {
-    "nama": "Booking Ruangan DPMPTSP",
-    "deskripsi": "Website Untuk Melakukan Pembokingan Ruangan Dinas DPMPTSP",
-    "link_github": "https://github.com/RachmatFajar1603/E-book-Ruangan-DPMPTSP",
+    "title": "DPMPTSP Room Booking",
+    "description": "A website for booking meeting rooms at the DPMPTSP office.",
+    "github_link": "https://github.com/RachmatFajar1603/E-book-Ruangan-DPMPTSP",
     "technologies": ["Blade", "PHP", "Laravel"]
   },
   {
-    "nama": "Silent Script",
-    "deskripsi": "Aplikasi Game untuk tunarungu",
-    "link_github": "https://github.com/MuhammadFirdaus210/Capstone_SilentScript/tree/main/SilentScript",
+    "title": "Silent Script",
+    "description": "A mobile game application designed for the hearing impaired.",
+    "github_link": "https://github.com/MuhammadFirdaus210/Capstone_SilentScript/tree/main/SilentScript",
     "technologies": ["Kotlin", "Android", "Firebase"]
   }
 ]
