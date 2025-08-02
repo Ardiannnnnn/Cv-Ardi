@@ -33,9 +33,9 @@ export default function About() {
 
   // Fungsi untuk download CV
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/cv/cv-ardi.pdf';
-    link.download = 'cv-ardi.pdf';
+    const link = document.createElement("a");
+    link.href = "/cv/cv-ardi.pdf";
+    link.download = "cv-ardi.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -87,21 +87,30 @@ export default function About() {
               <p className="text-White/90 text-base md:text-lg leading-relaxed">
                 Hello, my name is{" "}
                 <span className="text-Brown font-semibold">Ardian</span>, a
-                fresh graduate from the Computer Science program at
-                Syiah Kuala University.
+                fresh graduate from the Computer Science program at Syiah Kuala
+                University.
               </p>
 
               <p className="text-White/80 text-base md:text-lg leading-relaxed">
-                Since my university years, I have had a strong passion for technology and have continuously developed my skills in IT, particularly in programming languages and information systems.
+                Since my university years, I have had a strong passion for
+                technology and have continuously developed my skills in IT,
+                particularly in programming languages and information systems.
               </p>
 
               {/* Skills Tags */}
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
                 {[
-                  "Frontend Development",
+                  "PHP",
+                  "JavaScript",
+                  "Java",
+                  "Kotlin",
                   "React.js",
                   "TypeScript",
                   "UI/UX Design",
+                  "Laravel",
+                  "MySQL",
+                  "MySQLWorkbench",
+                  "Git",
                 ].map((skill) => (
                   <span
                     key={skill}
@@ -117,11 +126,15 @@ export default function About() {
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-Brown/10 backdrop-blur-sm border border-Brown/20 rounded-lg p-4 text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-Brown">22</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold text-Brown">
+                    22
+                  </h3>
                   <p className="text-White/70 text-sm">Years Old</p>
                 </div>
                 <div className="bg-Brown/10 backdrop-blur-sm border border-Brown/20 rounded-lg p-4 text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-Brown">S.Kom</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold text-Brown">
+                    S.Kom
+                  </h3>
                   <p className="text-White/70 text-sm">Degree</p>
                 </div>
                 <div className="bg-Brown/10 backdrop-blur-sm border border-Brown/20 rounded-lg p-4 text-center col-span-2">
@@ -134,22 +147,47 @@ export default function About() {
 
               {/* Action Buttons */}
               <div className="pt-4 flex flex-col sm:flex-row gap-3">
-                <button 
+                <button
                   onClick={handlePreviewCV}
                   className="flex-1 px-6 py-3 bg-Brown text-White rounded-lg hover:bg-DarkBrown transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
                   </svg>
                   Preview CV
                 </button>
-                <button 
+                <button
                   onClick={handleDownloadCV}
                   className="flex-1 px-6 py-3 border-2 border-Brown text-Brown rounded-lg hover:bg-Brown hover:text-White transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
                   </svg>
                   Download
                 </button>
@@ -172,14 +210,26 @@ export default function About() {
           <div className="relative w-full max-w-4xl h-[90vh] bg-White rounded-xl shadow-2xl overflow-hidden">
             {/* Modal Header */}
             <div className="flex justify-between items-center p-4 bg-DarkGreen border-b">
-              <h3 className="text-White text-xl font-semibold">CV Preview - Ardian</h3>
+              <h3 className="text-White text-xl font-semibold">
+                CV Preview - Ardian
+              </h3>
               <div className="flex gap-2">
                 <button
                   onClick={handleDownloadCV}
                   className="px-4 py-2 bg-Brown text-White rounded-lg hover:bg-DarkBrown transition-colors flex items-center gap-2"
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
                   </svg>
                   Download
                 </button>
@@ -187,8 +237,18 @@ export default function About() {
                   onClick={closePDFPreview}
                   className="p-2 text-White hover:bg-Brown/20 rounded-lg transition-colors"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               </div>
