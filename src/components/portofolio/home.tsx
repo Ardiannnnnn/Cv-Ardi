@@ -79,7 +79,7 @@ export default function Home() {
         {/* Container dengan shadow dan border untuk foto */}
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-br from-Brown/40 to-DarkBrown/30 rounded-full blur-md transform scale-110"></div>
-          <div className="relative rounded-full p-2 shadow-2xl">
+          <div className="relative bg-DarkGreen rounded-full border-8 border-DarkGreen shadow-2xl">
             <Image 
               src={ardi} 
               alt="Ardian Profile" 
