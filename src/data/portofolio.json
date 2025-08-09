@@ -8,8 +8,8 @@
   {
     "title": "Typo Detector",
     "description": "A website to detect misspelled words in text.",
-    "github_link": "https://github.com/Ardiannnnnn/DeteksiTypo",
-    "technologies": ["CSS", "Python", "JavaScript"]
+    "github_link": "https://github.com/Ardiannnnnn/TypoDetection",
+    "technologies": ["Next.js"]
   },
   {
     "title": "DPMPTSP Room Booking",
