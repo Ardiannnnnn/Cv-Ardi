@@ -258,7 +258,7 @@ export default function About() {
             {/* PDF Viewer */}
             <div className="w-full h-[calc(100%-4rem)]">
               <iframe
-                src="/cv/cv-ardi.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                src="/cv/Ardian_resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
                 className="w-full h-full"
                 title="CV Preview"
               />
