@@ -34,8 +34,8 @@ export default function About() {
   // Fungsi untuk download CV
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/cv/cv-ardi.pdf";
-    link.download = "cv-ardi.pdf";
+    link.href = "/cv/Ardian_resume.pdf";
+    link.download = "Ardian_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
