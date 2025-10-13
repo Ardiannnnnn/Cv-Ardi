@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ardi from "../../../public/image/ardi.png";
+import ardi from "../../../public/image/ardian.png";
 import { useEffect, useState } from "react";
 
 function Typewriter({ text, speed = 150 }: { text: string; speed?: number }) {
