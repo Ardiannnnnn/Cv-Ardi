@@ -3,24 +3,28 @@
     "title": "Tiket Hebat",
     "description": "An online ferry ticket booking website.",
     "github_link": "https://github.com/Ardiannnnnn/tiket-hebat",
-    "technologies": ["TypeScript", "React", "Node.js"]
+    "technologies": ["TypeScript", "React", "Node.js"],
+    "image": "/image/projects/tiket-hebat.png"
   },
   {
     "title": "Typo Detector",
     "description": "A website to detect misspelled words in text.",
     "github_link": "https://github.com/Ardiannnnnn/TypoDetection",
-    "technologies": ["Next.js"]
+    "technologies": ["Next.js"],
+    "image": "/image/projects/typo-detector.png"
   },
   {
     "title": "DPMPTSP Room Booking",
     "description": "A website for booking meeting rooms at the DPMPTSP office.",
     "github_link": "https://github.com/RachmatFajar1603/E-book-Ruangan-DPMPTSP",
-    "technologies": ["Blade", "PHP", "Laravel"]
+    "technologies": ["Blade", "PHP", "Laravel"],
+    "image": "/image/projects/dpmptsp.png"
   },
   {
     "title": "Silent Script",
     "description": "A mobile game application designed for the hearing impaired.",
     "github_link": "https://github.com/MuhammadFirdaus210/Capstone_SilentScript/tree/main/SilentScript",
-    "technologies": ["Kotlin", "Android", "Firebase"]
+    "technologies": ["Kotlin", "Android", "Firebase"],
+    "image": "/image/projects/silent-script.png"
   }
 ]

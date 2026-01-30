@@ -1,0 +1,42 @@
+[
+  {
+    "company": "PT KLIKDATA INDONESIA",
+    "period": "2025 - Present",
+    "role": "Software Engineer",
+    "showcase": [
+      { "id": 1, "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop", "title": "Tiket Hebat - Main" },
+      { "id": 2, "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop", "title": "Tiket Hebat - Feature" },
+      { "id": 3, "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop", "title": "Tiket Hebat - Dashboard" }
+    ]
+  },
+  {
+    "company": "DSAIRC UNIVERSITAS SYIAH KUALA",
+    "period": "2025 OCT - 2025 DEC",
+    "role": "Mobile Developer",
+    "showcase": [
+      { "id": 1, "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop", "title": "Mobile App Project" },
+      { "id": 2, "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop", "title": "App Interface" },
+      { "id": 3, "image": "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=600&h=400&fit=crop", "title": "Mobile Development" }
+    ]
+  },
+  {
+    "company": "DPMPTSP",
+    "period": "2024 JUL - 2024 AUG",
+    "role": "IT intern",
+    "showcase": [
+      { "id": 1, "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop", "title": "Office Environment" },
+      { "id": 2, "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop", "title": "Team Collaboration" },
+      { "id": 3, "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop", "title": "Coding Session" }
+    ]
+  },
+  {
+    "company": "BANGKIT ACADEMY",
+    "period": "2024 FEB - 2024 JUN",
+    "role": "Study Independent Participant",
+    "showcase": [
+      { "id": 1, "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", "title": "Learning Session" },
+      { "id": 2, "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop", "title": "Workshop" },
+      { "id": 3, "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop", "title": "Team Project" }
+    ]
+  }
+]

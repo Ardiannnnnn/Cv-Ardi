@@ -11,11 +11,37 @@
 }
 
 @theme inline {
+  /* Old Earth Tone Colors (deprecated) */
   --color-White: #FEFAE0;
   --color-Brown: #DDA15E;
   --color-DarkBrown: #BC6C25;
   --color-DarkGreen: #283618;
   --color-Green: #606C38;
+
+  /* New Dark Purple Theme - Modern & Attractive */
+  --color-dark-bg: #0A0A12;
+  --color-dark-surface: #12101A;
+  --color-dark-card: #1A1A24;
+  
+  /* Purple Glow Gradient */
+  --color-purple-deep: #2D1B4E;
+  --color-purple-glow: #4A2C7A;
+  --color-purple-mid: #6B3FA0;
+  --color-purple-light: #8B5FC0;
+  --color-purple-accent: #9D6FD1;
+  
+  /* Gold/Yellow Accent */
+  --color-gold: #CDA45E;
+  --color-gold-light: #E8B86D;
+  --color-gold-dark: #B8934E;
+  
+  /* Text Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B8B8C0;
+  --color-text-muted: #6A6A76;
+  
+  /* UI Colors */
+  --color-border: #2A2A36;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -133,4 +159,76 @@
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
   }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .rotate-y-\[-5deg\] {
+    transform: rotateY(-5deg);
+  }
+  
+  .rotate-x-\[5deg\] {
+    transform: rotateX(5deg);
+  }
+}
+
+/* 3D Floating Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotateY(-5deg) rotateX(5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotateY(-3deg) rotateX(7deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(12deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(15deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-15deg);
+  }
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 4.5s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
 }
