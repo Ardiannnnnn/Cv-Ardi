@@ -166,14 +166,13 @@ export default function Home() {
                       >
                         <div className="w-full h-full bg-gradient-to-br from-purple-deep/50 to-dark-surface flex flex-col items-center justify-center p-1.5">
                           {/* Project Image */}
-                          <div className="w-full h-24 bg-dark-bg rounded-lg border border-purple-glow/30 overflow-hidden mb-1">
+                          <div className="w-full h-24 bg-dark-bg rounded-lg border border-purple-glow/30 overflow-hidden mb-1 relative">
                             {project.image ? (
                               <Image
                                 src={project.image}
                                 alt={project.title}
-                                width={96}
-                                height={96}
-                                className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-300"
+                                fill
+                                className="object-cover object-top group-hover:scale-110 transition-transform duration-300"
                               />
                             ) : (
                               <div className="w-full h-full bg-gradient-to-b from-purple-glow/20 to-purple-deep/30 flex items-center justify-center">
