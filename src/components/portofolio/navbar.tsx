@@ -14,11 +14,11 @@ const links = [
     hasDropdown: true,
   },
   {
-    name: "About Us",
+    name: "About Me",
     href: "#about",
   },
   {
-    name: "Contact Us",
+    name: "Contact Me",
     href: "#contact",
   },
 ];
