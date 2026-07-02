@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "portfolio": "Portofolio",
+    "about": "Tentang Saya",
+    "contact": "Hubungi Saya",
+    "openMenu": "Buka menu utama"
+  },
+  "personal": {
+    "role": "Software Engineer",
+    "roleSubtitle": "Full Stack Developer",
+    "degreeHighlight": "Fresh",
+    "degree": "Graduate",
+    "program": "S-1 Informatika",
+    "university": "Universitas Syiah Kuala"
+  },
+  "home": {
+    "aboutTitle": "Tentang Saya",
+    "aboutTextPrefix": "Halo, saya",
+    "aboutTextSuffix": "Seorang Software Engineer yang passionate membangun hal-hal untuk web.",
+    "moreInfo": "Informasi Lebih Lanjut",
+    "lastProject": "Proyek Terakhir",
+    "profileAlt": "Profil Ardian"
+  },
+  "about": {
+    "bio1": "Halo, nama saya {name}, fresh graduate dari program Ilmu Komputer di {university}. Sejak masa kuliah, saya memiliki passion yang kuat terhadap teknologi.",
+    "bio2": "Saya terus mengembangkan kemampuan di bidang IT, khususnya dalam bahasa pemrograman dan sistem informasi. Passionate dalam menciptakan solusi elegan dan pengalaman pengguna yang indah.",
+    "previewCv": "Pratinjau CV",
+    "downloadCv": "Unduh CV",
+    "cvPreviewTitle": "Pratinjau CV - {name}",
+    "download": "Unduh"
+  },
+  "experience": {
+    "titleHighlight": "Pengalaman",
+    "title": "& Kerja",
+    "desc1": "Sepanjang perjalanan akademik dan awal karier, saya memperoleh pengalaman berharga dalam pengembangan software, mengerjakan berbagai proyek yang membentuk kemampuan saya.",
+    "desc2": "Dari proyek kampus hingga magang, setiap pengalaman berkontribusi pada pertumbuhan saya sebagai developer, mengajarkan pentingnya clean code dan desain yang berpusat pada pengguna.",
+    "showcase": "Showcase"
+  },
+  "projects": {
+    "titleHighlight": "Proyek",
+    "title": "& Portofolio"
+  },
+  "contact": {
+    "titlePrefix": "Jangan Ragu untuk",
+    "titleHighlight": "Hubungi",
+    "titleSuffix": "saya",
+    "desc1": "Saya selalu antusias terhubung dengan developer lain, calon kolaborator, dan siapa pun yang tertarik dengan teknologi. Baik Anda punya ide proyek, ingin mendiskusikan peluang, atau sekadar menyapa, saya senang mendengar dari Anda.",
+    "desc2": "Saat ini terbuka untuk proyek freelance, peluang full-time, dan kolaborasi menarik. Mari ciptakan sesuatu yang luar biasa bersama dan wujudkan ide Anda.",
+    "fullName": "Nama Lengkap",
+    "email": "Email",
+    "message": "Pesan Anda",
+    "send": "Kirim Pesan",
+    "quote": "Mengubah ide menjadi kenyataan melalui kode dan kreativitas",
+    "roleLabel": "software developer",
+    "connected": "Terhubung",
+    "connectedWith": "dengan",
+    "connectedMe": "saya",
+    "socialDesc": "Jangan ragu hubungi saya melalui platform di bawah. Saya paling aktif di LinkedIn dan GitHub, dan biasanya merespons dalam 24 jam.",
+    "mailtoSubject": "Pesan dari {name}",
+    "mailtoBody": "Dari: {name}\nEmail: {email}\n\nPesan:\n{message}"
+  }
+}

@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
+  const { t, personal } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
@@ -44,12 +46,9 @@ export default function Contact() {
     e.preventDefault();
     const { name, email, message } = formData;
 
-    // Create mailto link
-    const mailtoLink = `mailto:ardiannn98@gmail.com?subject=Message from ${encodeURIComponent(
-      name
-    )}&body=${encodeURIComponent(
-      `From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
+    const subject = t("contact.mailtoSubject", { name });
+    const body = t("contact.mailtoBody", { name, email, message });
+    const mailtoLink = `mailto:${personal.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
   };
@@ -60,44 +59,38 @@ export default function Contact() {
       ref={sectionRef}
       className="min-h-screen flex flex-col justify-center px-4 md:px-6 py-20 relative overflow-hidden"
     >
-      {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-20 w-64 h-64 bg-purple-glow/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-40 right-10 w-48 h-48 bg-gold/5 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto w-full relative z-10 px-0 md:px-4">
-        {/* Top Section - 3 columns */}
-        <div className={`grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Left - Title & Email */}
+        <div
+          className={`grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
           <div className="md:col-span-3">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-text-primary leading-tight mb-4">
-              Feel Free to{" "}
-              <span className="text-gold italic">Contact</span> me
+              {t("contact.titlePrefix")}{" "}
+              <span className="text-gold italic">{t("contact.titleHighlight")}</span>{" "}
+              {t("contact.titleSuffix")}
             </h2>
-            <a 
-              href="mailto:ardiannn98@gmail.com" 
+            <a
+              href={`mailto:${personal.email}`}
               className="text-text-muted text-sm hover:text-gold transition-colors duration-300"
             >
-              ardiannn98@gmail.com
+              {personal.email}
             </a>
           </div>
 
-          {/* Middle - Description paragraphs */}
           <div className="md:col-span-4 space-y-4">
             <p className="text-text-muted text-xs md:text-sm leading-relaxed">
-              I'm always excited to connect with fellow developers, potential collaborators, 
-              and anyone interested in technology. Whether you have a project idea, want to 
-              discuss opportunities, or just want to say hello, I'd love to hear from you.
+              {t("contact.desc1")}
             </p>
             <p className="text-text-muted text-xs md:text-sm leading-relaxed">
-              Currently open to freelance projects, full-time opportunities, and interesting 
-              collaborations. Let's create something amazing together and bring your ideas to life.
+              {t("contact.desc2")}
             </p>
           </div>
 
-          {/* Right - Contact Form */}
           <div className="md:col-span-5">
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
@@ -107,7 +100,7 @@ export default function Contact() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 bg-transparent border-b border-purple-deep/50 text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-gold transition-colors duration-300"
-                placeholder="Full Name"
+                placeholder={t("contact.fullName")}
               />
               <input
                 type="email"
@@ -116,7 +109,7 @@ export default function Contact() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 bg-transparent border-b border-purple-deep/50 text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-gold transition-colors duration-300"
-                placeholder="Email"
+                placeholder={t("contact.email")}
               />
               <textarea
                 name="message"
@@ -125,41 +118,41 @@ export default function Contact() {
                 required
                 rows={3}
                 className="w-full px-4 py-3 bg-transparent border-b border-purple-deep/50 text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-gold transition-colors duration-300 resize-none"
-                placeholder="Your Message"
+                placeholder={t("contact.message")}
               />
               <button
                 type="submit"
                 className="w-full px-6 py-3 bg-gold text-dark-bg rounded-md hover:bg-gold/90 transition-all duration-300 font-medium text-sm mt-2"
               >
-                Send Message
+                {t("contact.send")}
               </button>
             </form>
           </div>
         </div>
 
-        {/* Bottom Section - 2 columns */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Left - Quote */}
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
           <div>
             <blockquote className="text-xl md:text-2xl lg:text-3xl font-bold text-text-primary leading-tight mb-6">
-              "Turning ideas into reality through code and creativity"
+              &quot;{t("contact.quote")}&quot;
             </blockquote>
             <div className="flex items-center gap-3">
-              <span className="text-text-muted text-xs">software developer</span>
+              <span className="text-text-muted text-xs">{t("contact.roleLabel")}</span>
               <div className="w-16 md:w-24 h-[2px] bg-gold"></div>
             </div>
           </div>
 
-          {/* Right - Social Links */}
           <div>
             <p className="text-text-secondary text-sm mb-4">
-              Connected <span className="text-text-muted">"with"</span> me
+              {t("contact.connected")}{" "}
+              <span className="text-text-muted">&quot;{t("contact.connectedWith")}&quot;</span>{" "}
+              {t("contact.connectedMe")}
             </p>
-            
-            {/* Social Icons */}
+
             <div className="flex gap-4 mb-6">
               <a
-                href="https://www.instagram.com/ardian487_/"
+                href={personal.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-secondary hover:text-gold transition-colors duration-300"
@@ -169,7 +162,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/ardian-%E2%80%8E-b5659b2a4/"
+                href={personal.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-secondary hover:text-gold transition-colors duration-300"
@@ -179,7 +172,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="https://github.com/Ardiannnnnn"
+                href={personal.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-secondary hover:text-gold transition-colors duration-300"
@@ -189,19 +182,21 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="mailto:ardiannn98@gmail.com"
+                href={`mailto:${personal.email}`}
                 className="text-text-secondary hover:text-gold transition-colors duration-300"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
               </a>
             </div>
 
-            <p className="text-text-muted text-xs leading-relaxed">
-              Feel free to reach out through any of these platforms. 
-              I'm most active on LinkedIn and GitHub, and I typically respond within 24 hours.
-            </p>
+            <p className="text-text-muted text-xs leading-relaxed">{t("contact.socialDesc")}</p>
           </div>
         </div>
       </div>

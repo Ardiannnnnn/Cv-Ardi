@@ -2,63 +2,47 @@
 
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
-const links = [
-  {
-    name: "Home",
-    href: "#home",
-  },
-  {
-    name: "Portofolio",
-    href: "#projects",
-    hasDropdown: true,
-  },
-  {
-    name: "About Me",
-    href: "#about",
-  },
-  {
-    name: "Contact Me",
-    href: "#contact",
-  },
-];
+const navLinks = [
+  { key: "nav.home", href: "#home" },
+  { key: "nav.portfolio", href: "#projects", hasDropdown: true },
+  { key: "nav.about", href: "#about" },
+  { key: "nav.contact", href: "#contact" },
+] as const;
 
-// Chevron Down Icon Component
 const ChevronDown = ({ className }: { className?: string }) => (
-  <svg 
-    className={className} 
-    width="12" 
-    height="12" 
-    viewBox="0 0 12 12" 
-    fill="none" 
+  <svg
+    className={className}
+    width="12"
+    height="12"
+    viewBox="0 0 12 12"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path 
-      d="M2.5 4.5L6 8L9.5 4.5" 
-      stroke="currentColor" 
-      strokeWidth="1.5" 
-      strokeLinecap="round" 
+    <path
+      d="M2.5 4.5L6 8L9.5 4.5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
 );
 
 export default function Navbar() {
+  const { locale, setLocale, t, personal } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("#home");
-  const [currentLang, setCurrentLang] = useState<"EN" | "IND">("EN");
   const navbarRef = useRef<HTMLDivElement>(null);
-  
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (
-      navbarRef.current &&
-      !navbarRef.current.contains(event.target as Node)
-    ) {
+    if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
       setIsOpen(false);
     }
   };
@@ -66,9 +50,9 @@ export default function Navbar() {
   const handleClick = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
     setIsOpen(false);
@@ -77,9 +61,8 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
-      
-      // Detect active section
-      const sections = ['#home', '#about', '#projects', '#contact'];
+
+      const sections = ["#home", "#about", "#experience", "#projects", "#contact"];
       for (const section of sections) {
         const element = document.querySelector(section);
         if (element) {
@@ -94,7 +77,7 @@ export default function Navbar() {
 
     document.addEventListener("mousedown", handleClickOutside);
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
@@ -102,29 +85,31 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav 
-      ref={navbarRef} 
+    <nav
+      ref={navbarRef}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-dark-bg/90 backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-4">
-        {/* Logo */}
-        <a 
+        <a
           href="#home"
-          onClick={(e) => {e.preventDefault(); handleClick('#home');}}
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick("#home");
+          }}
           className="flex items-center space-x-2 rtl:space-x-reverse cursor-pointer group"
         >
-          {/* Logo Icon - Modern gradient */}
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-gold via-gold-light to-gold flex items-center justify-center shadow-lg shadow-gold/20">
-            <span className="text-dark-bg font-bold text-xl">A</span>
+            <span className="text-dark-bg font-bold text-xl">
+              {personal.name.charAt(0)}
+            </span>
           </div>
           <span className="self-center text-xl font-semibold whitespace-nowrap text-text-primary group-hover:text-gold transition-colors duration-200">
-            Ardian
+            {personal.name}
           </span>
         </a>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={toggleNavbar}
           type="button"
@@ -132,7 +117,7 @@ export default function Navbar() {
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only">{t("nav.openMenu")}</span>
           <svg
             className="w-5 h-5"
             aria-hidden="true"
@@ -150,17 +135,19 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Desktop Navigation */}
         <div
           className={`${isOpen ? "block" : "hidden"} w-full md:flex md:items-center md:w-auto`}
           id="navbar-default"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 bg-dark-surface/95 backdrop-blur-xl border border-purple-deep/30 rounded-2xl md:flex-row md:items-center md:space-x-1 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:backdrop-blur-none">
-            {links.map((link) => (
-              <li key={link.name}>
+            {navLinks.map((link) => (
+              <li key={link.key}>
                 <a
                   href={link.href}
-                  onClick={(e) => {e.preventDefault(); handleClick(link.href);}}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(link.href);
+                  }}
                   className={clsx(
                     "flex items-center gap-1 py-2.5 px-4 rounded-xl md:rounded-lg md:px-3 md:py-2 transition-all duration-200 cursor-pointer text-sm font-medium",
                     activeSection === link.href
@@ -168,38 +155,39 @@ export default function Navbar() {
                       : "text-text-secondary hover:text-text-primary hover:bg-purple-deep/40 md:hover:bg-purple-deep/30"
                   )}
                 >
-                  {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 opacity-70" />}
+                  {t(link.key)}
+                  {"hasDropdown" in link && link.hasDropdown && (
+                    <ChevronDown className="ml-1 opacity-70" />
+                  )}
                 </a>
               </li>
             ))}
           </ul>
 
-          {/* Language Switcher */}
           <div className="flex items-center mt-4 md:mt-0 md:ml-6 px-4 md:px-0">
             <div className="flex items-center text-sm bg-purple-deep/30 md:bg-transparent rounded-lg px-3 py-1.5 md:p-0">
-              <button 
-                onClick={() => setCurrentLang("EN")}
+              <button
+                onClick={() => setLocale("en")}
                 className={clsx(
                   "transition-all duration-200 px-1",
-                  currentLang === "EN" 
-                    ? "text-text-primary font-semibold" 
+                  locale === "en"
+                    ? "text-text-primary font-semibold"
                     : "text-text-muted hover:text-text-secondary"
                 )}
               >
                 EN
               </button>
               <span className="text-purple-glow mx-2 font-light">|</span>
-              <button 
-                onClick={() => setCurrentLang("IND")}
+              <button
+                onClick={() => setLocale("id")}
                 className={clsx(
                   "transition-all duration-200 px-1",
-                  currentLang === "IND" 
-                    ? "text-text-primary font-semibold" 
+                  locale === "id"
+                    ? "text-text-primary font-semibold"
                     : "text-text-muted hover:text-text-secondary"
                 )}
               >
-                IND
+                ID
               </button>
             </div>
           </div>

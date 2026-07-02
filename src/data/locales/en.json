@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portofolio",
+    "about": "About Me",
+    "contact": "Contact Me",
+    "openMenu": "Open main menu"
+  },
+  "personal": {
+    "role": "Software Engineer",
+    "roleSubtitle": "Full Stack Developer",
+    "degreeHighlight": "Fresh",
+    "degree": "Graduate",
+    "program": "S-1 Informatics",
+    "university": "Syiah Kuala University"
+  },
+  "home": {
+    "aboutTitle": "About Me",
+    "aboutTextPrefix": "Hi, I'm",
+    "aboutTextSuffix": "A passionate Software Engineer who loves building things for the web.",
+    "moreInfo": "More Information",
+    "lastProject": "Last Project",
+    "profileAlt": "Ardian Profile"
+  },
+  "about": {
+    "bio1": "Hello, my name is {name}, a fresh graduate from the Computer Science program at {university}. Since my university years, I have had a strong passion for technology.",
+    "bio2": "I continuously develop my skills in IT, particularly in programming languages and information systems. Passionate about creating elegant solutions and beautiful user experiences.",
+    "previewCv": "Preview CV",
+    "downloadCv": "Download CV",
+    "cvPreviewTitle": "CV Preview - {name}",
+    "download": "Download"
+  },
+  "experience": {
+    "titleHighlight": "Work",
+    "title": "& Experience",
+    "desc1": "Throughout my academic journey and early career, I have gained valuable experience in software development, working on various projects that have shaped my skills.",
+    "desc2": "From university projects to internships, each experience has contributed to my growth as a developer, teaching me the importance of clean code and user-centered design.",
+    "showcase": "Showcase"
+  },
+  "projects": {
+    "titleHighlight": "Projects",
+    "title": "& Portfolio"
+  },
+  "contact": {
+    "titlePrefix": "Feel Free to",
+    "titleHighlight": "Contact",
+    "titleSuffix": "me",
+    "desc1": "I'm always excited to connect with fellow developers, potential collaborators, and anyone interested in technology. Whether you have a project idea, want to discuss opportunities, or just want to say hello, I'd love to hear from you.",
+    "desc2": "Currently open to freelance projects, full-time opportunities, and interesting collaborations. Let's create something amazing together and bring your ideas to life.",
+    "fullName": "Full Name",
+    "email": "Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "quote": "Turning ideas into reality through code and creativity",
+    "roleLabel": "software developer",
+    "connected": "Connected",
+    "connectedWith": "with",
+    "connectedMe": "me",
+    "socialDesc": "Feel free to reach out through any of these platforms. I'm most active on LinkedIn and GitHub, and I typically respond within 24 hours.",
+    "mailtoSubject": "Message from {name}",
+    "mailtoBody": "From: {name}\nEmail: {email}\n\nMessage:\n{message}"
+  }
+}

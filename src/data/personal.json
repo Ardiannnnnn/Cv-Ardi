@@ -1,0 +1,16 @@
+{
+  "name": "Ardian",
+  "displayName": "ARDIAN",
+  "email": "ardiannn98@gmail.com",
+  "location": "Aceh, Indonesia",
+  "social": {
+    "github": "https://github.com/Ardiannnnnn",
+    "linkedin": "https://www.linkedin.com/in/ardian-%E2%80%8E-b5659b2a4/",
+    "instagram": "https://www.instagram.com/ardian487_/"
+  },
+  "cv": {
+    "path": "/cv/Ardian_resume.pdf",
+    "filename": "Ardian_resume.pdf"
+  },
+  "skills": ["React.js", "Next.JS", "TypeScript", "Laravel", "PHP", "MySQL", "Git"]
+}
