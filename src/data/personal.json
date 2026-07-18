@@ -9,8 +9,8 @@
     "instagram": "https://www.instagram.com/ardian487_/"
   },
   "cv": {
-    "path": "/cv/Ardian_resume.pdf",
-    "filename": "Ardian_resume.pdf"
+    "path": "/cv/Ardian_Resume.pdf",
+    "filename": "Ardian_Resume.pdf"
   },
   "skills": ["React.js", "Next.JS", "TypeScript", "Laravel", "PHP", "MySQL", "Git"]
 }
